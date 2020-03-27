@@ -1,0 +1,36 @@
+server:
+  port: 5000
+
+jasypt:
+  encryptor:
+    bean: encryptorBean
+
+spring:
+  application:
+    name: "config-server"
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: ENC(kD7qzBvrsEYET2p1Hu0d4o6TPoUSbUyQUoiyjVnH+KT/sf3oB2CZk3BCdhhTdmJi3Uo7gqSx/Rc=)
+          username: ENC(r4/VD5oIQF7HbmVHsJlUB/21XHJsYXHM)
+          password: ENC(Xb/Z/Ev0YpU/gync53lJt8Zdc3VQgd+K88nnTQsFdvsft4ImoolJsNyTA32qBZyq4ZBeVWV6DVA=)
+
+  rabbitmq:
+    host: ENC(kNBegph+Z8+5yOgt1eqcRUyXLOr4DCne1GbF9IZCSYQ=)
+    port: 5672
+    username: ENC(SyJJ9e6RGLuSRZbtmu6nh1tCI1+rnYD5)
+    password: ENC(Nvf5j37s+e7xjelBg9ySnIHoiMF3ZQc0uEPwziNk9TM=)
+
+  security:
+    user:
+      name: ENC(0rViwNjSUl5TNoOqUeH9GA==)
+      password: ENC(bqjB10pcP/1BzHxzeU4IddJr1tY+jm6C504Yg2Is8xU=)
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: ['bus-refresh']

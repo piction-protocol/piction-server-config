@@ -1,0 +1,6 @@
+encrypt:
+  key-store:
+    location:
+    password:
+    alias:
+    secret:
