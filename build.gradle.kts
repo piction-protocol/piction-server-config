@@ -15,7 +15,7 @@ repositories {
     mavenCentral()
 }
 
-extra["springCloudVersion"] = "Hoxton.SR3"
+extra["springCloudVersion"] = "Hoxton.SR2"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")

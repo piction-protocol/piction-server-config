@@ -13,7 +13,7 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
         http
             .csrf().disable()
             .authorizeRequests()
-            .antMatchers("/health-check", "/refresh", "/actuator/bus-refresh").permitAll()
+            .antMatchers("/health-check", "/actuator/bus-refresh").permitAll()
             .anyRequest()
             .authenticated()
             .and()
